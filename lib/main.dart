@@ -63,7 +63,7 @@ class _MyHomePageState extends State<MyHomePage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
 
-              // Question 2
+              // Question 2 -------------------------------------------
               BlocBuilder<InputCubit, String>(
                 bloc: context.read<InputCubit>(),
                 builder: (context, state){
@@ -128,7 +128,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 }
               ),
 
-              // Question 1
+      // Question 1 ----------------------------------------------------
               BlocConsumer<CounterCubit, int>(
                 bloc: BlocProvider.of<CounterCubit>(context),
                 listener: (context, state) {
